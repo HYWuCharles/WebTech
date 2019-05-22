@@ -1,0 +1,28 @@
+<%- include('header') %>
+
+<div class="ui grid">
+    <div class="four wide column"></div>
+    <div class="eight wide column">
+        <form class="ui form segment" method="post" enctype="multipart/form-data" action="http://localhost:3000/video/5cc5aa66fb30daeb7e6f1ee4/float">
+            <div class="field required">
+                <label>createTime</label>
+                <input type="text" name="createTime">
+            </div>
+            <div class="field required">
+                <label>content</label>
+                <input type="text" name="content">
+            </div>
+            <div class="field required">
+                <label>size</label>
+                <input type="text" name="size">
+            </div>
+            <div class="field required">
+                <label>position</label>
+                <input type="text" name="position">
+            </div>
+            <input type="submit" class="ui button fluid" value="发表">
+        </form>
+    </div>
+</div>
+
+<%- include('footer') %>
